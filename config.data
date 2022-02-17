@@ -1,0 +1,2231 @@
+{
+  "Scopes": [
+    {
+      "Classifications": [
+        {
+          "Id": "34146887-fdca-4abc-81fc-8e638cd69083",
+          "ScopeId": "d182c50f-0b9d-47ee-97b5-7546dab69117",
+          "Name": "Çok Gizli",
+          "Color": "#FF0000",
+          "ClassificationScore": 4,
+          "Description": "En sınırlı erişime sahip ve yüksek derecede bütünlük gerektiren veriler.Bu genellikle ifşa edilmesi halinde kuruluşa en fazla zararı verecek verilerdir. ",
+          "Properties": {}
+        },
+        {
+          "Id": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+          "ScopeId": "d182c50f-0b9d-47ee-97b5-7546dab69117",
+          "Name": "Gizli",
+          "Color": "#FFCC00",
+          "ClassificationScore": 3,
+          "Description": "Şirket içinde daha az kısıtlayıcı olabilecek ancak ifşa edilmesi durumunda hasara neden olabilecek veriler.",
+          "Properties": {}
+        },
+        {
+          "Id": "a5bc3cfd-4d51-461e-b5f0-d84c6fa67a36",
+          "ScopeId": "d182c50f-0b9d-47ee-97b5-7546dab69117",
+          "Name": "Dahili",
+          "Color": "#33CCCC",
+          "ClassificationScore": 2,
+          "Description": "Tescilli veriler, şirket dışında sınırlı olarak açıklanan veya yeni bir ürünün teknik özellikleri gibi şirketin rekabet avantajını azaltabilecek bilgiler içeren verilerdir.",
+          "Properties": {}
+        },
+        {
+          "Id": "63ba1b7e-64b8-45b1-8d0e-d28df3c89f40",
+          "ScopeId": "d182c50f-0b9d-47ee-97b5-7546dab69117",
+          "Name": "Genel",
+          "Color": "#C0C0C0",
+          "ClassificationScore": 1,
+          "Description": "Kamuya açık veriler, şirket tarafından kullanılan en az hassas verilerdir ve ifşa edilmesi durumunda en az zarara neden olur. Bu, pazarlama için kullanılan verilerden şirketteki çalışan sayısına kadar herhangi bir şey olabilir.",
+          "Properties": {}
+        }
+      ],
+      "IsDefault": true,
+      "Id": "d182c50f-0b9d-47ee-97b5-7546dab69117",
+      "Name": "Veriket",
+      "Description": "Veriket Company Classifications!",
+      "Color": "#FF0000",
+      "Properties": {}
+    }
+  ],
+  "Sensitivities": [
+    {
+      "IsDefault": false,
+      "Id": "3265dac8-e08b-44a1-badc-2164496259f8",
+      "Name": "Kişisel Veri İçermez",
+      "SensitivityScore": 1,
+      "Color": "#C0C0C0",
+      "Description": "Kişisel veri, kimliği belirli veya belirlenebilir gerçek kişiye ilişkin her türlü bilgiyi ifade etmektedir. Bir içeriğin kişisel veri içermediğinden söz edebilmek için, verinin bir gerçek kişiye ilişkin olmaması veya gerçek bir kişiyi tanımlamaması gereklidir.",
+      "Properties": {}
+    },
+    {
+      "IsDefault": false,
+      "Id": "641f45e9-cb37-4624-a17f-cdd382c7d086",
+      "Name": "Kişisel Veri İçerir",
+      "SensitivityScore": 2,
+      "Color": "#999999",
+      "Description": "Kişisel veri, kimliği belirli veya belirlenebilir gerçek kişiye ilişkin her türlü bilgiyi ifade etmektedir. Kişisel veriden söz edebilmek için, verinin bir gerçek kişiye ilişkin olması ve bu kişinin de belirlenebilir nitelikte olması gereklidir.",
+      "Properties": {}
+    },
+    {
+      "IsDefault": false,
+      "Id": "7e77468b-15fb-457c-9a9d-e3c919fca467",
+      "Name": "Özel Nitelikli Kişisel Veri İçerir",
+      "SensitivityScore": 3,
+      "Color": "#808080",
+      "Description": "Kişilerin ırkı, etnik kökeni, siyasi düşüncesi, felsefi inancı, dini, mezhebi veya diğer inançları, kılık ve kıyafeti, dernek, vakıf ya da sendika üyeliği, sağlığı, cinsel hayatı, ceza mahkumiyeti ve güvenlik tedbirleriyle ilgili verileri tarifler.",
+      "Properties": {}
+    }
+  ],
+  "Policies": [
+    {
+      "Name": "Kredi Kartı/IBAN Politikası",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [
+        {
+          "Id": "4e9ccfa3-5df8-471d-a890-bc0b1b38f361",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "00b85c73-d14a-4875-80d4-3b0a7c4e449e",
+            "Conditions": [
+              {
+                "Values": [
+                  "XipcYig/aSkoKFBJTil8KEthcnRTaWZyZXNpKXwoS2FydFNpZnJlKXwoU2lmcmUpfChTxLFmcmUpfCjFnmlmcmUpfChQYXJvbGEpfChQSU4pfChwaW4gKXwocMSxbikpKChccykqKSgoOikqKSgoPSkqKSgoOykqKSgoLCkqKSgoOikqKShcZHs0fSlcYg=="
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 1,
+                "Dictionary": {},
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "1b3a8edd-a6b0-4968-a486-08d27cd5019b",
+            "Name": "Kredi Kartı Pin Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "745d2da3-250a-4aa0-827d-f8482c230b22",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "00b85c73-d14a-4875-80d4-3b0a7c4e449e",
+            "Conditions": [
+              {
+                "Values": [
+                  "content"
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 2,
+                "Dictionary": {},
+                "FunctionalControls": [
+                  {
+                    "Functions": [
+                      {
+                        "ValidationType": 2,
+                        "ValueType": 0,
+                        "Value": "XipcYihbMC05XVsuXSk/KChbMC05XXsxNn0pfCgoWzAtOV17NH0pWy1dKFswLTldezR9KVstXShbMC05XXs0fSlbLV0oWzAtOV17NH0pKSlcYg==",
+                        "Parameters": [],
+                        "Name": "ValidateCreditCard"
+                      }
+                    ],
+                    "Id": "b2e7db6b-1e88-49e0-9ac9-9bae23d729f3",
+                    "CodeContext": {
+                      "Reference": 3,
+                      "Value": "Veriket.Compiler.Functions.StaticRunner"
+                    }
+                  }
+                ]
+              }
+            ],
+            "Category": 0,
+            "Id": "2d6f8bd6-fc8b-48f8-bd26-1eb87477a76d",
+            "Name": "Kredi Kartı Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "2e7cc346-c282-412e-b544-1afd80693210",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "00b85c73-d14a-4875-80d4-3b0a7c4e449e",
+            "Conditions": [
+              {
+                "Values": [
+                  "XipcYig/aSkoKENWVil8KENWQyl8KENJRCl8KENpRCl8KENWMikpKChccykqKSgoOikqKSgoPSkqKSgoOykqKSgoLCkqKSgoXHMpKikoKDopKikoXGR7M30pXGI="
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 1,
+                "Dictionary": {},
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "8bda6cff-878f-49c7-8a29-a1e624d34d21",
+            "Name": "Kart Güvenlik Kodu Kuralı",
+            "Threshold": 10,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "42507671-71fd-43d9-8dfd-95d4e3ed39c5",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "00b85c73-d14a-4875-80d4-3b0a7c4e449e",
+            "Conditions": [
+              {
+                "Values": [
+                  "content"
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 2,
+                "Dictionary": {},
+                "FunctionalControls": [
+                  {
+                    "Functions": [
+                      {
+                        "ValidationType": 2,
+                        "ValueType": 0,
+                        "Value": "XGJUUlswLTldezJ9XHM/KFswLTldezR9XHM/KXsxfShbMC05XXsxfSkoWzAtOV17M31ccz8pKFswLTldezR9XHM/KXszfShbMC05XXsyfSlccz9cYg==",
+                        "Parameters": [],
+                        "Name": "ValidateIban"
+                      }
+                    ],
+                    "Id": "74bffcb0-e417-457d-ac2a-0b157f07f940",
+                    "CodeContext": {
+                      "Reference": 3,
+                      "Value": "Veriket.Compiler.Functions.StaticRunner"
+                    }
+                  }
+                ]
+              }
+            ],
+            "Category": 0,
+            "Id": "a24920f1-1029-444b-baa7-91acada5a3cd",
+            "Name": "IBAN Tr Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "8567d43e-7d40-46f6-a541-eb2f6dbc71fc",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "00b85c73-d14a-4875-80d4-3b0a7c4e449e",
+            "Conditions": [
+              {
+                "Values": [
+                  "XipcYig/aSkoKFZBTElEKXwoVmFsaWQpfChWYWzEsWQpfChUSFJVKXwoU29uS3VsbGFubWEpfChTb24gS3VsbGFubWEpfChTb24gS3VsbGFubWEgVGFyaWhpKXwoU29uIEt1bGxhbm1hIFRhcsSxaMSxKXwoR2XDp2VybGlsaWsgVGFyaWhpKXwoR2VjZXJsaWxpayBUYXJpaGkpfChHZWNlcmzEsWzEsWsgVGFyxLFoxLEpfChHZcOnZXJsxLFsxLFrIFRhcsSxaMSxKSkoKFxzKSopKCg6KSopKCg9KSopKCg7KSopKCgsKSopKChccykqKSgoOikqKShcZHsyfSkoKFxcKXwoXC8pKShcZHsyfSlcYg=="
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 1,
+                "Dictionary": {},
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "ab247e68-c31c-4bd5-92e0-def9f4c725ac",
+            "Name": "Kredi Kartı Son Kullanma Tarihi Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        }
+      ],
+      "Id": "00b85c73-d14a-4875-80d4-3b0a7c4e449e",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 2,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "641f45e9-cb37-4624-a17f-cdd382c7d086"
+    },
+    {
+      "Name": "Veri Tipleri Politikası",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [
+        {
+          "Id": "deb87356-3f4e-4150-b7cd-ed38eb5bd118",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "160389e8-c5e9-4cda-b3f7-736e6f1b598d",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 1,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Veri Tipleri Form": [
+                    "BT Bilgileri",
+                    "Sözleşme ve Tutanak Bilgileri",
+                    "MÜŞTERİ BİLGİLERİ",
+                    "İletişim Bilgileri"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "b05de439-d558-443e-8ba7-eb03099fb8a6",
+            "Name": "Veri Tipleri Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "2319534c-f59b-4ebb-8be9-6971773b4f4d",
+          "Rule": {
+            "Field": "Username",
+            "PolicyId": "160389e8-c5e9-4cda-b3f7-736e6f1b598d",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 3,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "test": [
+                    "adasd"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "e4ef2711-1918-4218-aa0d-934af9b690b9",
+            "Name": "test",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        }
+      ],
+      "Id": "160389e8-c5e9-4cda-b3f7-736e6f1b598d",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 4,
+      "SensitivityScore": 1,
+      "ClassificationId": "34146887-fdca-4abc-81fc-8e638cd69083",
+      "SensitivityId": "3265dac8-e08b-44a1-badc-2164496259f8"
+    },
+    {
+      "Name": "Kişisel Veri Politikası",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [
+        {
+          "Id": "669ff267-cac1-4a23-8775-cb0e88c22066",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "27c1885e-ad71-4241-869a-2ddd55333557",
+            "Conditions": [
+              {
+                "Values": [
+                  "XigwWzEtOV18WzEtN11bMC05XXw4WzAxXSkoKFxzKSopKChbQS1aYS16XSkoXGR7NCw1fSl8KFtBLVphLXpdezJ9KShcZHszLDR9KXwoW0EtWmEtel17M30pKChccykqKShcZHsyLDN9KSkk"
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 1,
+                "Dictionary": {},
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "168e1dd4-e0b2-4eae-8d96-f3a4ab5727b5",
+            "Name": "Plaka Kuralı Tr",
+            "Threshold": 50,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "49359f88-bb68-45ff-99fc-cbfee32ecd28",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "27c1885e-ad71-4241-869a-2ddd55333557",
+            "Conditions": [
+              {
+                "Values": [
+                  "content"
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 2,
+                "Dictionary": {},
+                "FunctionalControls": [
+                  {
+                    "Functions": [
+                      {
+                        "ValidationType": 2,
+                        "ValueType": 0,
+                        "Value": "XipccygoWys5XSpbMF0qKFxkezN9KS0qXHMqKFxkezN9KS0qXHMqKFxkezJ9KS0qXHMqKFxkezJ9KSl8KChcZHszfSktKlxzKihcZHszfSktKlxzKihcZHsyfSktKlxzKihcZHsyfSkpfChcKCpbMF0qKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKXwoWzBdKlwoKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKSlcYg==",
+                        "Parameters": [
+                          "tr"
+                        ],
+                        "Name": "ValidateTaxNumber"
+                      }
+                    ],
+                    "Id": "5eba88ba-cd62-4db2-a940-e7ceb082d7ec",
+                    "CodeContext": {
+                      "Reference": 3,
+                      "Value": "Veriket.Compiler.Functions.StaticRunner"
+                    }
+                  }
+                ]
+              }
+            ],
+            "Category": 0,
+            "Id": "18ab53d2-8be6-4299-a3bd-a91e4b6e2512",
+            "Name": "Vergi Numarası Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "3307ab6a-07be-4bf9-8c7f-a8c71625ce33",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "27c1885e-ad71-4241-869a-2ddd55333557",
+            "Conditions": [
+              {
+                "Values": [
+                  "XipcYihbQS1aXXsxfVsxLTldezF9W0EtWl17MX1bMS05XXsxfSktWzEtOV17NH0tWzEtOV17Mn1cYg=="
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 1,
+                "Dictionary": {},
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "1ed53721-0c42-41d4-a5ac-b744d19e9d5f",
+            "Name": "HES Kodu",
+            "Threshold": 2,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "aa728e87-4545-42d1-952a-5f6b35022403",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "27c1885e-ad71-4241-869a-2ddd55333557",
+            "Conditions": [
+              {
+                "Values": [
+                  "XGIoKFNFUsSwKXwoU2VyaSl8KFNFUsSwIE5PKXwoU2VyaSBObykpKChccykqKSgoOikqKSgoXHMpKikoW0EtWl1bMC05XXsyfVtBLVpdWzAtOV17NX0pXGJ8XGIoKFNFUsSwKXwoU2VyaSl8KFNlcmkgTm8pfChTRVLEsCBOTykpKChccykqKSgoOikqKSgoXHMpKikoW0EtWl1bMC05XXsyfSlcYg=="
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 1,
+                "Dictionary": {},
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "29600400-603c-422f-9076-0d574464d175",
+            "Name": "Seri No Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "cede241e-8f8a-47b0-a0c1-4369929633e9",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "27c1885e-ad71-4241-869a-2ddd55333557",
+            "Conditions": [
+              {
+                "Values": [
+                  "content"
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 2,
+                "Dictionary": {},
+                "FunctionalControls": [
+                  {
+                    "Functions": [
+                      {
+                        "ValidationType": 2,
+                        "ValueType": 0,
+                        "Value": "XipcYihbMC05XVsuXSk/KFsxLTldezF9WzAtOV17OX1bMDI0NjhdezF9KVxi",
+                        "Parameters": [],
+                        "Name": "ValidateTCKN"
+                      }
+                    ],
+                    "Id": "86fe9a6e-4ad4-413b-a0ba-736ca62f579a",
+                    "CodeContext": {
+                      "Reference": 3,
+                      "Value": "Veriket.Compiler.Functions.StaticRunner"
+                    }
+                  }
+                ]
+              }
+            ],
+            "Category": 0,
+            "Id": "2c583584-75bb-47b7-83e4-5543f1d69125",
+            "Name": "TC Kimlik No Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "d52d5df3-8152-4851-80fd-95e6140323ed",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "27c1885e-ad71-4241-869a-2ddd55333557",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 0,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Hassas Anahtar Kelimeler": [
+                    "Pasaport Numarası",
+                    "Doğum Tarihi",
+                    "Nüfus Kayıt Örneği",
+                    "Nufus Cüzdan",
+                    "Identity Card",
+                    "social security nbr",
+                    "IDENTITY CARD",
+                    "Passport No",
+                    "Baba Adı",
+                    "Identity Card",
+                    "Ana Adı",
+                    "4B Sicil No",
+                    "Bilanço",
+                    "Adı Soyadı",
+                    "Kimlik No",
+                    "sosyal güvenlik num",
+                    "4C Sicil No",
+                    "vatandaş kimliği",
+                    "sifrem",
+                    "Askerlik Durum Belgesi",
+                    "Sürücü Belgesi",
+                    "Vergi Kimlik Numara",
+                    "Kredi Kartı Nu",
+                    "Aile durum bilgisi",
+                    "Hesap Hareketleriniz",
+                    "Nüfus Cüzdan",
+                    "Signature Declaration",
+                    "kişisel kimlik no",
+                    "Signed Aggreement",
+                    "Sociel Security Nu",
+                    "Kimlik Kartı",
+                    "İstirahat raporu",
+                    "Adli Sicil",
+                    "Marital status",
+                    "CreditCard Number",
+                    "Credit Card No",
+                    "şifrem",
+                    "Öğrenci Belgesi",
+                    "Anne kızlık soyadı",
+                    "Müşteri Hesap Listesi",
+                    "Şifreniz",
+                    "Kişisel kimlik Numarası",
+                    "Medeni Hal",
+                    "CreditCardNumber",
+                    "Driving Licence",
+                    "4A Sicil No",
+                    "Audit Report",
+                    "Denetim Raporu",
+                    "İmzalı sözleşme",
+                    "İmza Sirküleri",
+                    "Hesap Özetiniz",
+                    "Doğum Yeri",
+                    "Kimlik Kart",
+                    "Balance Sheet",
+                    "Maaş bordrosu"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "7a30ba2d-d01c-4ab1-a4f6-79a20bb326d2",
+            "Name": "Hassas Veri Kuralı",
+            "Threshold": 2,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        }
+      ],
+      "Id": "27c1885e-ad71-4241-869a-2ddd55333557",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 2,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "641f45e9-cb37-4624-a17f-cdd382c7d086"
+    },
+    {
+      "Name": "Test",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [],
+      "Id": "29b528eb-7b39-4588-b370-0007ef7c7598",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 2,
+      "SensitivityScore": 2,
+      "ClassificationId": "a5bc3cfd-4d51-461e-b5f0-d84c6fa67a36",
+      "SensitivityId": "641f45e9-cb37-4624-a17f-cdd382c7d086"
+    },
+    {
+      "Name": "Ip Numarası Politikası",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [
+        {
+          "Id": "ee397d77-2515-43ca-a216-ea25bda6cf30",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "29bf5b23-5157-4772-b43b-53b2eb1689e6",
+            "Conditions": [
+              {
+                "Values": [
+                  "XigoWzAtOV18WzEtOV1bMC05XXwxWzAtOV17Mn18MlswLTRdWzAtOV18MjVbMC01XSlcLil7M30oWzAtOV18WzEtOV1bMC05XXwxWzAtOV17Mn18MlswLTRdWzAtOV18MjVbMC01XSkkLio="
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 1,
+                "Dictionary": {},
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "bf1a48e8-4060-40bc-80b2-6e1d0bf7ae01",
+            "Name": "Ip Kuralı Reg",
+            "Threshold": 20,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": [
+            {
+              "Field": "Content",
+              "PolicyId": "29bf5b23-5157-4772-b43b-53b2eb1689e6",
+              "Conditions": [
+                {
+                  "Values": [],
+                  "ValueType": 0,
+                  "Expression": 0,
+                  "ExpressionType": 0,
+                  "Dictionary": {
+                    "Ip Sözlüğü": [
+                      "IP Aralığı",
+                      "IP Number",
+                      "IP",
+                      "IP Blok",
+                      "Subnet"
+                    ]
+                  },
+                  "FunctionalControls": []
+                }
+              ],
+              "Category": 0,
+              "Id": "fcf69246-5240-4953-b689-70626df84464",
+              "Name": "Ip kuralı İfade",
+              "Threshold": 0,
+              "StartDate": "0001-01-01T02:00:00",
+              "EndDate": "0001-01-01T02:00:00"
+            }
+          ]
+        }
+      ],
+      "Id": "29bf5b23-5157-4772-b43b-53b2eb1689e6",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 2,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "641f45e9-cb37-4624-a17f-cdd382c7d086"
+    },
+    {
+      "Name": "CV Politikaları",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [
+        {
+          "Id": "d3a1b915-9b18-444f-ac99-3ecb7a025077",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "43a1f93a-df8f-4009-b53a-36b42eb98352",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 1,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Linkedin CV - TR Sözlüğü": [
+                    "En Önemli Yetenekler",
+                    "Özet",
+                    "Eğitim",
+                    "İletişim Bilgileri"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "016d6f74-2e52-49b5-b308-a9441192c6db",
+            "Name": "Linkedin TR - İçerik Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "e2de344b-7031-486c-8c69-94e0561585c7",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "43a1f93a-df8f-4009-b53a-36b42eb98352",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 1,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "KariyerNet-EN Sözlüğü": [
+                    "EDUCATION",
+                    "EXPERIENCE",
+                    "SKILLS",
+                    "REFERENCES"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "11150451-02c5-47a7-82e9-b9c5cc387bc8",
+            "Name": "KariyerNet-EN İçerik Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "ac568bbd-24f8-4714-88eb-a29e2c0ec46f",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "43a1f93a-df8f-4009-b53a-36b42eb98352",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 1,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "CV Sözlüğü": [
+                    "Eğitim",
+                    "Deneyim",
+                    "Sertifika",
+                    "Referans",
+                    "Seminer"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "26f4f3d0-7338-44da-823c-c152af1b0dfa",
+            "Name": "CV İçerik Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "730036ad-9a40-4af5-a0bf-5842501c293d",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "43a1f93a-df8f-4009-b53a-36b42eb98352",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 1,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "KariyerNet CV Sözlüğü": [
+                    "Özet Bilgi",
+                    "Eğitim Bilgileri",
+                    "Özel Bilgi",
+                    "İş Deneyimleri"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "3098ae5d-3bd2-430c-b0aa-3e4ebf44d726",
+            "Name": "KariyerNet İçerik Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "8d97c934-5a12-4906-b207-a289033a808e",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "43a1f93a-df8f-4009-b53a-36b42eb98352",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 1,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Linkedin CV - EN Sözlüğü": [
+                    "Skills",
+                    "Experience",
+                    "Education"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "416ca8f5-aa8a-4569-bf88-1b559144c88f",
+            "Name": "Linkedin - EN  İçerik Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "29d751a6-791f-448f-9f15-818f8b4af05c",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "43a1f93a-df8f-4009-b53a-36b42eb98352",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 1,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Secretcv CV Sözlüğü": [
+                    "Kişisel Bilgiler",
+                    "Referanslar",
+                    "Deneyimler",
+                    "Yetkinlikler",
+                    "Eğitim Bilgileri",
+                    "Tercihler"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "8df044e7-84eb-49c3-8ddc-fd6571f55e36",
+            "Name": "Secretcv İçerik Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        }
+      ],
+      "Id": "43a1f93a-df8f-4009-b53a-36b42eb98352",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 2,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "641f45e9-cb37-4624-a17f-cdd382c7d086"
+    },
+    {
+      "Name": "Koordinat Politikası",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [
+        {
+          "Id": "38d74dba-2d37-44d0-99ab-dbf0c14b9969",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "90cb9500-f690-470a-a7af-3b27d16c9cf6",
+            "Conditions": [
+              {
+                "Values": [
+                  "XihbLStdPykoW1xkXXsxLDJ9KSgoKFwuKShcZHs1LDZ9KSgsKT8pKShccyopKChbLStdPykoW1xkXXsxLDJ9KSgoXC4pKFxkezUsNn0pKT8pJA=="
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 1,
+                "Dictionary": {},
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "5ba7644a-db05-4062-b807-58b53b7f4e6c",
+            "Name": "Koordinat Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": [
+            {
+              "Field": "Content",
+              "PolicyId": "90cb9500-f690-470a-a7af-3b27d16c9cf6",
+              "Conditions": [
+                {
+                  "Values": [],
+                  "ValueType": 0,
+                  "Expression": 0,
+                  "ExpressionType": 0,
+                  "Dictionary": {
+                    "Koordinat Terimleri Sözlüğü": [
+                      "boylam",
+                      "enlem",
+                      "koordinat",
+                      "longtude",
+                      "coordinate",
+                      "latitude"
+                    ]
+                  },
+                  "FunctionalControls": []
+                }
+              ],
+              "Category": 0,
+              "Id": "fafdc946-abdc-4254-8d09-0594d123850b",
+              "Name": "Koordinat Terimleri",
+              "Threshold": 0,
+              "StartDate": "0001-01-01T02:00:00",
+              "EndDate": "0001-01-01T02:00:00"
+            }
+          ]
+        }
+      ],
+      "Id": "90cb9500-f690-470a-a7af-3b27d16c9cf6",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 2,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "641f45e9-cb37-4624-a17f-cdd382c7d086"
+    },
+    {
+      "Name": "Resmi Evrak Politikası",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [
+        {
+          "Id": "aca314ab-fc3e-4b3a-9143-1cafa5b8f5af",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "ae902ea3-626e-46ca-b428-77a35fea9ba8",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 1,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Oda Sicil Sözlüğü": [
+                    "Ticaret Ünvanı",
+                    "Derece",
+                    "Faaliyet Belgesi",
+                    "Ticaret Sicil No"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "fa4c7886-8df9-46cf-81bf-2bc8576d3a5a",
+            "Name": "Oda Sicil Belgesi",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        }
+      ],
+      "Id": "ae902ea3-626e-46ca-b428-77a35fea9ba8",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 1,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "3265dac8-e08b-44a1-badc-2164496259f8"
+    },
+    {
+      "Name": "Pin/Puk Kodu Politikalar",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [
+        {
+          "Id": "ab4bf65b-3a02-48f4-845e-883bc2adbe69",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "b5d52c5e-7ebd-4a24-8b24-080394eb7968",
+            "Conditions": [
+              {
+                "Values": [
+                  "XiooP2kpKChQSU4pfChQxLBOKXwoUGluKXwoUMSxbil8KHBpbiApfChwxLFuKXwoUFVLKXwoUHVrKXwocHVrICkpKChccykqKSgoOikqKSgoPSkqKSgoOykqKSgoLCkqKSgoXHMpKikoKDopKikoXGR7M30p"
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 1,
+                "Dictionary": {},
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "fda2c729-6aef-4185-b188-7067bb86a1d0",
+            "Name": "Pin/Puk Kodu Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        }
+      ],
+      "Id": "b5d52c5e-7ebd-4a24-8b24-080394eb7968",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 2,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "641f45e9-cb37-4624-a17f-cdd382c7d086"
+    },
+    {
+      "Name": "Finansal Politikalar",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [
+        {
+          "Id": "ee4dc20b-d197-442f-a496-03af6f38a2d8",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "bfc46e63-01bf-46bf-8a65-03a899e4a43a",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 0,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Bordro Terimleri Sözlüğü": [
+                    "Gelir vergisi matrahı",
+                    "İşsizlik Sigortası İşçi Payı",
+                    "İşsizlik sigortası işveren payı",
+                    "SGK işveren payı",
+                    "Damga vergisi",
+                    "Gelir vergisi",
+                    "İşsizlik sigortası işçi payı",
+                    "Net ücret",
+                    "İşverenin toplam maliyeti",
+                    "Ödenecek Gelir Vergisi",
+                    "Kesintiler toplamı",
+                    "SGK işçi payı",
+                    "Brüt Ücret",
+                    "Asgari Geçim İndirimi"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "3ed22577-3527-45ad-a5f1-aaf62958bae4",
+            "Name": "Bordro Terimleri Kuralı",
+            "Threshold": 3,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": [
+            {
+              "Field": "Content",
+              "PolicyId": "bfc46e63-01bf-46bf-8a65-03a899e4a43a",
+              "Conditions": [
+                {
+                  "Values": [
+                    "TRY",
+                    "EUR",
+                    "USD",
+                    "TL",
+                    "YTL"
+                  ],
+                  "ValueType": 0,
+                  "Expression": 3,
+                  "ExpressionType": 0,
+                  "Dictionary": {},
+                  "FunctionalControls": []
+                }
+              ],
+              "Category": 0,
+              "Id": "2d942079-c2d2-4155-991a-fa1f46fcd610",
+              "Name": "Para Birimleri Kuralı",
+              "Threshold": 0,
+              "StartDate": "0001-01-01T02:00:00",
+              "EndDate": "0001-01-01T02:00:00"
+            }
+          ]
+        },
+        {
+          "Id": "d07df09e-5b1b-4e76-a932-baf366bc815e",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "bfc46e63-01bf-46bf-8a65-03a899e4a43a",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 0,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Finansal Terimler Sözlüğü": [
+                    "bütçe planı",
+                    "hizmet kabulü",
+                    "lisans yenileme",
+                    "lisans alımı",
+                    "SAT No",
+                    "sipariş numarası",
+                    "sipariş no",
+                    "mali kod",
+                    "SAS No",
+                    "sip no"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "cddfc05d-d7d9-4579-907c-c2e43d2f2b7d",
+            "Name": "Finansal Terimler Kuralı",
+            "Threshold": 3,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": [
+            {
+              "Field": "Content",
+              "PolicyId": "bfc46e63-01bf-46bf-8a65-03a899e4a43a",
+              "Conditions": [
+                {
+                  "Values": [
+                    "TRY",
+                    "EUR",
+                    "USD",
+                    "TL",
+                    "YTL"
+                  ],
+                  "ValueType": 0,
+                  "Expression": 3,
+                  "ExpressionType": 0,
+                  "Dictionary": {},
+                  "FunctionalControls": []
+                }
+              ],
+              "Category": 0,
+              "Id": "2d942079-c2d2-4155-991a-fa1f46fcd610",
+              "Name": "Para Birimleri Kuralı",
+              "Threshold": 0,
+              "StartDate": "0001-01-01T02:00:00",
+              "EndDate": "0001-01-01T02:00:00"
+            }
+          ]
+        }
+      ],
+      "Id": "bfc46e63-01bf-46bf-8a65-03a899e4a43a",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 2,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "641f45e9-cb37-4624-a17f-cdd382c7d086"
+    },
+    {
+      "Name": "Pasaport Politikası",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [
+        {
+          "Id": "29d34428-ec59-4cb6-8691-767bf0919abd",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "cbe5e285-aa50-4e9b-abb2-048e33e0e528",
+            "Conditions": [
+              {
+                "Values": [
+                  "XGJbQS1aXXsxfVswLTldezZ9XGI="
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 1,
+                "Dictionary": {},
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "519be48f-0d4f-4406-8343-fced9829eecd",
+            "Name": "Pasaport No Kuralı",
+            "Threshold": 30,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": [
+            {
+              "Field": "Content",
+              "PolicyId": "cbe5e285-aa50-4e9b-abb2-048e33e0e528",
+              "Conditions": [
+                {
+                  "Values": [],
+                  "ValueType": 0,
+                  "Expression": 0,
+                  "ExpressionType": 0,
+                  "Dictionary": {
+                    "": []
+                  },
+                  "FunctionalControls": []
+                }
+              ],
+              "Category": 0,
+              "Id": "ebe5cba0-7a87-4c74-9077-51bd8f990a6c",
+              "Name": "Pasaport Kelime Kuralı EN",
+              "Threshold": 0,
+              "StartDate": "0001-01-01T02:00:00",
+              "EndDate": "0001-01-01T02:00:00"
+            },
+            {
+              "Field": "Content",
+              "PolicyId": "cbe5e285-aa50-4e9b-abb2-048e33e0e528",
+              "Conditions": [
+                {
+                  "Values": [],
+                  "ValueType": 0,
+                  "Expression": 0,
+                  "ExpressionType": 0,
+                  "Dictionary": {
+                    "Pasaport Sözlüğü": [
+                      "Passport",
+                      "Pasaport",
+                      "Passport number",
+                      "Pasaport no"
+                    ]
+                  },
+                  "FunctionalControls": []
+                }
+              ],
+              "Category": 0,
+              "Id": "eff7d8c3-edbd-4ec1-b1dd-d5bc0cd6af1b",
+              "Name": "Pasaport Kelime Kuralı TR",
+              "Threshold": 0,
+              "StartDate": "0001-01-01T02:00:00",
+              "EndDate": "0001-01-01T02:00:00"
+            }
+          ]
+        }
+      ],
+      "Id": "cbe5e285-aa50-4e9b-abb2-048e33e0e528",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 2,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "641f45e9-cb37-4624-a17f-cdd382c7d086"
+    },
+    {
+      "Name": "Imei Numrası Politikası",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [
+        {
+          "Id": "4450dcc7-9721-4ba9-8447-3c264da5e57b",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "ce7bdfb0-040f-4adf-972c-563cdd1a6bc1",
+            "Conditions": [
+              {
+                "Values": [
+                  "XlswLTldezE1fVxiKCgoXHMpKikoLCooKFxzKSopWzAtOV17MTV9KSokKSo="
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 1,
+                "Dictionary": {},
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "25b11fcd-b395-4436-afab-dd71c0408779",
+            "Name": "Imeı No",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": [
+            {
+              "Field": "Content",
+              "PolicyId": "ce7bdfb0-040f-4adf-972c-563cdd1a6bc1",
+              "Conditions": [
+                {
+                  "Values": [],
+                  "ValueType": 0,
+                  "Expression": 0,
+                  "ExpressionType": 0,
+                  "Dictionary": {
+                    "Imei Numarası Sözlük": [
+                      "imei no",
+                      "Imei Numarası",
+                      "IMEI",
+                      "Imei"
+                    ]
+                  },
+                  "FunctionalControls": []
+                }
+              ],
+              "Category": 0,
+              "Id": "33835066-969f-40bd-bfd8-2e6aae9b7f58",
+              "Name": "Imei Sözlük",
+              "Threshold": 0,
+              "StartDate": "0001-01-01T02:00:00",
+              "EndDate": "0001-01-01T02:00:00"
+            }
+          ]
+        }
+      ],
+      "Id": "ce7bdfb0-040f-4adf-972c-563cdd1a6bc1",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 2,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "641f45e9-cb37-4624-a17f-cdd382c7d086"
+    },
+    {
+      "Name": "Muafiyet Rapor Politikası",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [
+        {
+          "Id": "060102bf-461e-4e71-b475-0ab78cd918e2",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "db8e48de-41dd-4cb8-b4dd-29c2e17e297e",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 1,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Muafiyet Raporu": [
+                    "Firma Dönemsel Faaliyet Bilgileri",
+                    "STB Kodu",
+                    "Yürütülmekte olan projeler listesi",
+                    "Proje ilerleme",
+                    "Projede Çalışan Personel Listesi",
+                    "Dönem İçinde Yapılan Çalışma"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "82195c71-9eb5-4330-8674-a3dff5321227",
+            "Name": "Muafiyet Rapor Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        }
+      ],
+      "Id": "db8e48de-41dd-4cb8-b4dd-29c2e17e297e",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 2,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "641f45e9-cb37-4624-a17f-cdd382c7d086"
+    },
+    {
+      "Name": "Özel Nitelikli Kişisel Veri Politikası",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [
+        {
+          "Id": "c606bdb4-8d88-439f-9fbd-0c99834818b2",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "e0b53431-6046-446e-99a8-8e28c8457bea",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 0,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "İnanç Tercihleri Listesi": [
+                    "Musevi",
+                    "Deist",
+                    "Yahudi",
+                    "Müslüman",
+                    "Hristiyan",
+                    "Budist",
+                    "Ataist"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "056256fd-ca3f-4d18-98b0-d28c2d6ab8ab",
+            "Name": "İnanç Verileri Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "67fb4985-6fdd-41ca-bdb9-f8e0c117cc8c",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "e0b53431-6046-446e-99a8-8e28c8457bea",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 0,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Kan Grupları Listesi ": [
+                    "0Rh+",
+                    "AB Rh-",
+                    "0Rh-",
+                    "B Rh+",
+                    "0 Rh-",
+                    "ABRh-",
+                    "ABRh+",
+                    "0 Rh+",
+                    "ARh-",
+                    "AB Rh+",
+                    "A Rh+",
+                    "B Rh-",
+                    "BRh+",
+                    "BRh-",
+                    "A Rh-",
+                    "ARh+"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "eee3d363-98b6-421d-9c08-ec8e45bc2dda",
+            "Name": "Kan Grubu Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "66e18084-123e-4946-82dd-47050666c09d",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "e0b53431-6046-446e-99a8-8e28c8457bea",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 3,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Cinsel Tercihler Listesi": [
+                    "Gerantofili",
+                    "Panseksüel",
+                    "Triseksüel",
+                    "Sapyoseksüel",
+                    "Homoseksüel",
+                    "Biseksüel",
+                    "Poliamori",
+                    "İnterseks",
+                    "Hiperseksüel",
+                    "Zoofili",
+                    "Heteroseksüel",
+                    "Aseksüel",
+                    "Hermafrodit",
+                    "Pomoseksüel",
+                    "Sadomazoşizm",
+                    "Nekrofili"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "ffee15b1-55a1-4843-823a-c3d2fcdb50a8",
+            "Name": "Cinsel Veri Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        }
+      ],
+      "Id": "e0b53431-6046-446e-99a8-8e28c8457bea",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 4,
+      "SensitivityScore": 3,
+      "ClassificationId": "34146887-fdca-4abc-81fc-8e638cd69083",
+      "SensitivityId": "7e77468b-15fb-457c-9a9d-e3c919fca467"
+    },
+    {
+      "Name": "Lokasyon Politikaları",
+      "Title": "",
+      "Scope": 0,
+      "Rules": [
+        {
+          "Id": "96b6e7da-f857-48fa-941f-62f211ace04f",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "ffb21acd-8d84-4938-b649-c948c0bfdcab",
+            "Conditions": [
+              {
+                "Values": [
+                  "XihbLStdPykoW1xkXXsxLDJ9KSgoKFwuKShcZHs1LDZ9KSgsKT8pKShccyopKChbLStdPykoW1xkXXsxLDJ9KSgoXC4pKFxkezUsNn0pKT8pJA=="
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 1,
+                "Dictionary": {},
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "7abf5419-3bf3-4e6b-bd99-51e0279468f1",
+            "Name": "Koordinat Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "70955f83-f423-4e2a-aa41-0ec731a53066",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "ffb21acd-8d84-4938-b649-c948c0bfdcab",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 0,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Koordinat Terimleri Sözlüğü": [
+                    "boylam",
+                    "enlem",
+                    "koordinat",
+                    "longtude",
+                    "coordinate",
+                    "latitude"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "d54018f7-f6c1-4e15-a042-f2feab30d547",
+            "Name": "Koordinat Terimleri Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        }
+      ],
+      "Id": "ffb21acd-8d84-4938-b649-c948c0bfdcab",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 2,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "641f45e9-cb37-4624-a17f-cdd382c7d086"
+    },
+    {
+      "Name": "Test Mail",
+      "Title": "",
+      "Scope": 2,
+      "Rules": [],
+      "Id": "9bf54a1e-3706-46fb-b6f9-0efaeb9a42cb",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 1,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "3265dac8-e08b-44a1-badc-2164496259f8"
+    },
+    {
+      "Name": "Kişisel Veri Politikası",
+      "Title": "",
+      "Scope": 2,
+      "Rules": [
+        {
+          "Id": "fc33991a-2be3-4121-8326-17a3e742793b",
+          "Rule": {
+            "Field": "Subject",
+            "PolicyId": "b74c1dac-12c9-46ac-8fb1-049f3e5da841",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 0,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Organizasyonel Atama": [
+                    "Organizasyonel Atama"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "0b8a5a7f-9bc7-4dc0-b3bb-f02ecf7b711a",
+            "Name": "Organizasyonel Atama",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "d17a6c3c-57f7-499d-84a9-978845c8b93a",
+          "Rule": {
+            "Field": "Attachments",
+            "PolicyId": "b74c1dac-12c9-46ac-8fb1-049f3e5da841",
+            "Conditions": [
+              {
+                "Values": [
+                  "content"
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 2,
+                "Dictionary": {},
+                "FunctionalControls": [
+                  {
+                    "Functions": [
+                      {
+                        "ValidationType": 2,
+                        "ValueType": 0,
+                        "Value": "XipccygoWys5XSpbMF0qKFxkezN9KS0qXHMqKFxkezN9KS0qXHMqKFxkezJ9KS0qXHMqKFxkezJ9KSl8KChcZHszfSktKlxzKihcZHszfSktKlxzKihcZHsyfSktKlxzKihcZHsyfSkpfChcKCpbMF0qKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKXwoWzBdKlwoKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKSlcYg==",
+                        "Parameters": [
+                          "322, 416, 272, 472, 382, 358, 312, 242, 478, 466, 256, 266, 378, 488, 458, 228, 426, 434, 374, 248, 224, 286, 376, 364, 258, 412, 380, 284, 424, 446, 442, 222, 342, 454, 456, 438, 326, 476, 246, 324, 212, 216, 232, 370, 338, 474, 366, 352, 318, 288, 386, 348, 344, 262, 332, 274, 422, 236, 482, 252, 436, 384, 388,452, 328, 464 , 264, 362, 484, 368,3 46, 414, 486, 282, 356, 462, 428, 276, 432, 226, 354, 372, 392"
+                        ],
+                        "Name": "ValidatePhone"
+                      }
+                    ],
+                    "Id": "19e373f7-5876-4bc8-984c-caf16eea9ca0",
+                    "CodeContext": {
+                      "Reference": 3,
+                      "Value": "Veriket.Compiler.Functions.StaticRunner"
+                    }
+                  }
+                ]
+              }
+            ],
+            "Category": 0,
+            "Id": "158ed652-6380-4756-b9e1-205401d370be",
+            "Name": "Sabit Telefon No Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "1c9b2c55-808a-44d7-90e5-93247a668daa",
+          "Rule": {
+            "Field": "Body",
+            "PolicyId": "b74c1dac-12c9-46ac-8fb1-049f3e5da841",
+            "Conditions": [
+              {
+                "Values": [
+                  "content"
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 2,
+                "Dictionary": {},
+                "FunctionalControls": [
+                  {
+                    "Functions": [
+                      {
+                        "ValidationType": 2,
+                        "ValueType": 0,
+                        "Value": "XipccygoWys5XSpbMF0qKFxkezN9KS0qXHMqKFxkezN9KS0qXHMqKFxkezJ9KS0qXHMqKFxkezJ9KSl8KChcZHszfSktKlxzKihcZHszfSktKlxzKihcZHsyfSktKlxzKihcZHsyfSkpfChcKCpbMF0qKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKXwoWzBdKlwoKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKSlcYg==",
+                        "Parameters": [
+                          "501, 505, 506, 507, 551 , 552, 553, 554, 555, 559,530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 561,540, 541, 542, 543, 544, 545, 546, 547, 548, 549"
+                        ],
+                        "Name": "ValidatePhone"
+                      }
+                    ],
+                    "Id": "302c668d-a549-48c7-9f2c-dbca1fcbb7ee",
+                    "CodeContext": {
+                      "Reference": 3,
+                      "Value": "Veriket.Compiler.Functions.StaticRunner"
+                    }
+                  }
+                ]
+              }
+            ],
+            "Category": 0,
+            "Id": "2f3695a8-61ff-4243-a5ed-4343f1af876c",
+            "Name": "Mobil Telefon No Kuralı",
+            "Threshold": 4,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "9c20e2aa-7ba6-4807-a587-d96aea5b055b",
+          "Rule": {
+            "Field": "Body",
+            "PolicyId": "b74c1dac-12c9-46ac-8fb1-049f3e5da841",
+            "Conditions": [
+              {
+                "Values": [
+                  "content"
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 2,
+                "Dictionary": {},
+                "FunctionalControls": [
+                  {
+                    "Functions": [
+                      {
+                        "ValidationType": 2,
+                        "ValueType": 0,
+                        "Value": "XipccygoWys5XSpbMF0qKFxkezN9KS0qXHMqKFxkezN9KS0qXHMqKFxkezJ9KS0qXHMqKFxkezJ9KSl8KChcZHszfSktKlxzKihcZHszfSktKlxzKihcZHsyfSktKlxzKihcZHsyfSkpfChcKCpbMF0qKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKXwoWzBdKlwoKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKSlcYg==",
+                        "Parameters": [
+                          "322, 416, 272, 472, 382, 358, 312, 242, 478, 466, 256, 266, 378, 488, 458, 228, 426, 434, 374, 248, 224, 286, 376, 364, 258, 412, 380, 284, 424, 446, 442, 222, 342, 454, 456, 438, 326, 476, 246, 324, 212, 216, 232, 370, 338, 474, 366, 352, 318, 288, 386, 348, 344, 262, 332, 274, 422, 236, 482, 252, 436, 384, 388,452, 328, 464 , 264, 362, 484, 368,3 46, 414, 486, 282, 356, 462, 428, 276, 432, 226, 354, 372, 392"
+                        ],
+                        "Name": "ValidatePhone"
+                      }
+                    ],
+                    "Id": "b32305c0-c678-418f-b5af-a44f4be8a06f",
+                    "CodeContext": {
+                      "Reference": 3,
+                      "Value": "Veriket.Compiler.Functions.StaticRunner"
+                    }
+                  }
+                ]
+              }
+            ],
+            "Category": 0,
+            "Id": "56892c34-e9c7-4afb-9b17-f7319544e21d",
+            "Name": "Sabit Telefon No Kuralı",
+            "Threshold": 2,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "b8e41e92-ef51-405e-a91b-2b577fb7ffeb",
+          "Rule": {
+            "Field": "Subject",
+            "PolicyId": "b74c1dac-12c9-46ac-8fb1-049f3e5da841",
+            "Conditions": [
+              {
+                "Values": [
+                  "content"
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 2,
+                "Dictionary": {},
+                "FunctionalControls": [
+                  {
+                    "Functions": [
+                      {
+                        "ValidationType": 2,
+                        "ValueType": 0,
+                        "Value": "XipccygoWys5XSpbMF0qKFxkezN9KS0qXHMqKFxkezN9KS0qXHMqKFxkezJ9KS0qXHMqKFxkezJ9KSl8KChcZHszfSktKlxzKihcZHszfSktKlxzKihcZHsyfSktKlxzKihcZHsyfSkpfChcKCpbMF0qKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKXwoWzBdKlwoKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKSlcYg==",
+                        "Parameters": [
+                          "322, 416, 272, 472, 382, 358, 312, 242, 478, 466, 256, 266, 378, 488, 458, 228, 426, 434, 374, 248, 224, 286, 376, 364, 258, 412, 380, 284, 424, 446, 442, 222, 342, 454, 456, 438, 326, 476, 246, 324, 212, 216, 232, 370, 338, 474, 366, 352, 318, 288, 386, 348, 344, 262, 332, 274, 422, 236, 482, 252, 436, 384, 388,452, 328, 464 , 264, 362, 484, 368,3 46, 414, 486, 282, 356, 462, 428, 276, 432, 226, 354, 372, 392"
+                        ],
+                        "Name": "ValidatePhone"
+                      }
+                    ],
+                    "Id": "f50c37ad-05d3-4312-98ea-e8e6aaf9d9aa",
+                    "CodeContext": {
+                      "Reference": 3,
+                      "Value": "Veriket.Compiler.Functions.StaticRunner"
+                    }
+                  }
+                ]
+              }
+            ],
+            "Category": 0,
+            "Id": "64881da6-7bff-4352-99f4-bbc3d0a8d64a",
+            "Name": "Sabit Telefon No Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "7880e25f-3ec6-4153-bbbb-ab35790ae3ad",
+          "Rule": {
+            "Field": "Subject",
+            "PolicyId": "b74c1dac-12c9-46ac-8fb1-049f3e5da841",
+            "Conditions": [
+              {
+                "Values": [
+                  "content"
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 2,
+                "Dictionary": {},
+                "FunctionalControls": [
+                  {
+                    "Functions": [
+                      {
+                        "ValidationType": 2,
+                        "ValueType": 0,
+                        "Value": "XipccygoWys5XSpbMF0qKFxkezN9KS0qXHMqKFxkezN9KS0qXHMqKFxkezJ9KS0qXHMqKFxkezJ9KSl8KChcZHszfSktKlxzKihcZHszfSktKlxzKihcZHsyfSktKlxzKihcZHsyfSkpfChcKCpbMF0qKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKXwoWzBdKlwoKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKSlcYg==",
+                        "Parameters": [
+                          "501, 505, 506, 507, 551 , 552, 553, 554, 555, 559,530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 561,540, 541, 542, 543, 544, 545, 546, 547, 548, 549"
+                        ],
+                        "Name": "ValidatePhone"
+                      }
+                    ],
+                    "Id": "6b891de5-1e77-4b7e-b848-27345e0b24a2",
+                    "CodeContext": {
+                      "Reference": 3,
+                      "Value": "Veriket.Compiler.Functions.StaticRunner"
+                    }
+                  }
+                ]
+              }
+            ],
+            "Category": 0,
+            "Id": "9ed8c05e-2cd5-4ee9-8e32-4757fded67bb",
+            "Name": "Mobil Telefon No Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "cfd6b164-a919-41fb-86ee-0e23e3e946f6",
+          "Rule": {
+            "Field": "Attachments",
+            "PolicyId": "b74c1dac-12c9-46ac-8fb1-049f3e5da841",
+            "Conditions": [
+              {
+                "Values": [
+                  "content"
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 2,
+                "Dictionary": {},
+                "FunctionalControls": [
+                  {
+                    "Functions": [
+                      {
+                        "ValidationType": 2,
+                        "ValueType": 0,
+                        "Value": "XipccygoWys5XSpbMF0qKFxkezN9KS0qXHMqKFxkezN9KS0qXHMqKFxkezJ9KS0qXHMqKFxkezJ9KSl8KChcZHszfSktKlxzKihcZHszfSktKlxzKihcZHsyfSktKlxzKihcZHsyfSkpfChcKCpbMF0qKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKXwoWzBdKlwoKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKSlcYg==",
+                        "Parameters": [
+                          "501, 505, 506, 507, 551 , 552, 553, 554, 555, 559,530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 561,540, 541, 542, 543, 544, 545, 546, 547, 548, 549"
+                        ],
+                        "Name": "ValidatePhone"
+                      }
+                    ],
+                    "Id": "92a31aa1-3b87-46ec-bba4-27b8102d9048",
+                    "CodeContext": {
+                      "Reference": 3,
+                      "Value": "Veriket.Compiler.Functions.StaticRunner"
+                    }
+                  }
+                ]
+              }
+            ],
+            "Category": 0,
+            "Id": "c2fc0da0-b3f1-4bf0-b894-8a713918e54c",
+            "Name": "Mobil Telefon No Kuralı",
+            "Threshold": 2,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        }
+      ],
+      "Id": "b74c1dac-12c9-46ac-8fb1-049f3e5da841",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 2,
+      "SensitivityScore": 2,
+      "ClassificationId": "a5bc3cfd-4d51-461e-b5f0-d84c6fa67a36",
+      "SensitivityId": "641f45e9-cb37-4624-a17f-cdd382c7d086"
+    },
+    {
+      "Name": "Sistem Admin ve ParolaPolitikası",
+      "Title": "",
+      "Scope": 1,
+      "Rules": [
+        {
+          "Id": "4ad4b019-c2ab-4072-9c92-1f0d5096f151",
+          "Rule": {
+            "Field": "Extention",
+            "PolicyId": "41ab9146-c14e-47a1-92d3-ab2efbcdee13",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 3,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Sistem Dosya Tipleri": [
+                    ".conf",
+                    ".ini",
+                    ".webconfig",
+                    ".config"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "1411d27a-ba35-4c7f-b1f9-7114bbb61588",
+            "Name": "Dosya Tipi Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "cc8d9b1e-c735-4d59-a837-f1cdc33cb3c6",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "41ab9146-c14e-47a1-92d3-ab2efbcdee13",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 0,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Parola Anahtar Kelime Listesi": [
+                    "Parola",
+                    "Sifre",
+                    "Password",
+                    "Şifre",
+                    "connectionString"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "431aab99-8059-40c0-b01f-3aa8a275eec9",
+            "Name": "Parola Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "58423a6a-efdb-4892-ad19-e2a4ecedf6d1",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "41ab9146-c14e-47a1-92d3-ab2efbcdee13",
+            "Conditions": [
+              {
+                "Values": [],
+                "ValueType": 0,
+                "Expression": 3,
+                "ExpressionType": 0,
+                "Dictionary": {
+                  "Sistem Admin Listesi": [
+                    "admin",
+                    "privileged",
+                    "yetkili",
+                    "system",
+                    "sysuser",
+                    "sysoper",
+                    "sys_dba",
+                    "sysdba",
+                    "sys_user",
+                    "sys_oper",
+                    "db2admin",
+                    "admın"
+                  ]
+                },
+                "FunctionalControls": []
+              }
+            ],
+            "Category": 0,
+            "Id": "916b9805-165e-466f-9dd7-2438d5248bc4",
+            "Name": "Sistem Admin Kuralı",
+            "Threshold": 0,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        }
+      ],
+      "Id": "41ab9146-c14e-47a1-92d3-ab2efbcdee13",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 1,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "3265dac8-e08b-44a1-badc-2164496259f8"
+    },
+    {
+      "Name": "Test Documents",
+      "Title": "",
+      "Scope": 1,
+      "Rules": [],
+      "Id": "a9c6e2f3-60cf-4f94-b247-79b6fe304f64",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 3,
+      "SensitivityScore": 1,
+      "ClassificationId": "fca16667-98ce-44cd-b8ef-fe69f63f5112",
+      "SensitivityId": "3265dac8-e08b-44a1-badc-2164496259f8"
+    },
+    {
+      "Name": "Kişisel Veri Politikası",
+      "Title": "",
+      "Scope": 1,
+      "Rules": [
+        {
+          "Id": "29817bf7-f220-4968-80e1-5a65f1d06a19",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "d522c757-6cb0-4d49-9dbb-e88cbdb56c9f",
+            "Conditions": [
+              {
+                "Values": [
+                  "content"
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 2,
+                "Dictionary": {},
+                "FunctionalControls": [
+                  {
+                    "Functions": [
+                      {
+                        "ValidationType": 2,
+                        "ValueType": 0,
+                        "Value": "XipccygoWys5XSpbMF0qKFxkezN9KS0qXHMqKFxkezN9KS0qXHMqKFxkezJ9KS0qXHMqKFxkezJ9KSl8KChcZHszfSktKlxzKihcZHszfSktKlxzKihcZHsyfSktKlxzKihcZHsyfSkpfChcKCpbMF0qKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKXwoWzBdKlwoKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKSlcYg==",
+                        "Parameters": [
+                          "322, 416, 272, 472, 382, 358, 312, 242, 478, 466, 256, 266, 378, 488, 458, 228, 426, 434, 374, 248, 224, 286, 376, 364, 258, 412, 380, 284, 424, 446, 442, 222, 342, 454, 456, 438, 326, 476, 246, 324, 212, 216, 232, 370, 338, 474, 366, 352, 318, 288, 386, 348, 344, 262, 332, 274, 422, 236, 482, 252, 436, 384, 388,452, 328, 464 , 264, 362, 484, 368,3 46, 414, 486, 282, 356, 462, 428, 276, 432, 226, 354, 372, 392"
+                        ],
+                        "Name": "ValidatePhone"
+                      }
+                    ],
+                    "Id": "716b5e98-4f98-4473-8337-04300f8d3319",
+                    "CodeContext": {
+                      "Reference": 3,
+                      "Value": "Veriket.Compiler.Functions.StaticRunner"
+                    }
+                  }
+                ]
+              }
+            ],
+            "Category": 0,
+            "Id": "13130b7a-2d52-4790-b110-1238abdaf114",
+            "Name": "Sabit Telefon No Kuralı",
+            "Threshold": 2,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        },
+        {
+          "Id": "d84c66d4-26c6-4302-b976-9bd01839788f",
+          "Rule": {
+            "Field": "Content",
+            "PolicyId": "d522c757-6cb0-4d49-9dbb-e88cbdb56c9f",
+            "Conditions": [
+              {
+                "Values": [
+                  "content"
+                ],
+                "ValueType": 0,
+                "Expression": 9,
+                "ExpressionType": 2,
+                "Dictionary": {},
+                "FunctionalControls": [
+                  {
+                    "Functions": [
+                      {
+                        "ValidationType": 2,
+                        "ValueType": 0,
+                        "Value": "XipccygoWys5XSpbMF0qKFxkezN9KS0qXHMqKFxkezN9KS0qXHMqKFxkezJ9KS0qXHMqKFxkezJ9KSl8KChcZHszfSktKlxzKihcZHszfSktKlxzKihcZHsyfSktKlxzKihcZHsyfSkpfChcKCpbMF0qKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKXwoWzBdKlwoKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKSlcYg==",
+                        "Parameters": [
+                          "501, 505, 506, 507, 551 , 552, 553, 554, 555, 559,530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 561,540, 541, 542, 543, 544, 545, 546, 547, 548, 549"
+                        ],
+                        "Name": "ValidatePhone"
+                      }
+                    ],
+                    "Id": "79c98145-4733-4091-bbef-e4ad769970bf",
+                    "CodeContext": {
+                      "Reference": 3,
+                      "Value": "Veriket.Compiler.Functions.StaticRunner"
+                    }
+                  }
+                ]
+              }
+            ],
+            "Category": 0,
+            "Id": "507df851-b24a-4985-a7c8-b4bda6a84c8f",
+            "Name": "Mobil Telefon No Kuralı",
+            "Threshold": 2,
+            "StartDate": "0001-01-01T02:00:00",
+            "EndDate": "0001-01-01T02:00:00"
+          },
+          "FilterType": 2,
+          "Rules": []
+        }
+      ],
+      "Id": "d522c757-6cb0-4d49-9dbb-e88cbdb56c9f",
+      "StartDate": "0001-01-01T00:00:00",
+      "EndDate": "0001-01-01T00:00:00",
+      "ClassificationScore": 2,
+      "SensitivityScore": 2,
+      "ClassificationId": "a5bc3cfd-4d51-461e-b5f0-d84c6fa67a36",
+      "SensitivityId": "641f45e9-cb37-4624-a17f-cdd382c7d086"
+    }
+  ],
+  "DefaultSensitivity": {
+    "IsDefault": false,
+    "Id": "3265dac8-e08b-44a1-badc-2164496259f8",
+    "Name": "Kişisel Veri İçermez",
+    "SensitivityScore": 1,
+    "Color": "#C0C0C0",
+    "Description": "Kişisel veri, kimliği belirli veya belirlenebilir gerçek kişiye ilişkin her türlü bilgiyi ifade etmektedir. Bir içeriğin kişisel veri içermediğinden söz edebilmek için, verinin bir gerçek kişiye ilişkin olmaması veya gerçek bir kişiyi tanımlamaması gereklidir.",
+    "Properties": {}
+  },
+  "DefaultClassification": {
+    "Id": "63ba1b7e-64b8-45b1-8d0e-d28df3c89f40",
+    "ScopeId": "d182c50f-0b9d-47ee-97b5-7546dab69117",
+    "Name": "Genel",
+    "Color": "#C0C0C0",
+    "ClassificationScore": 1,
+    "Description": "Kamuya açık veriler, şirket tarafından kullanılan en az hassas verilerdir ve ifşa edilmesi durumunda en az zarara neden olur. Bu, pazarlama için kullanılan verilerden şirketteki çalışan sayısına kadar herhangi bir şey olabilir.",
+    "Properties": {}
+  },
+  "Properties": {
+    "regex_TCKN": "XipcYihbMC05XVsuXSk/KFsxLTldezF9WzAtOV17OX1bMDI0NjhdezF9KVxi",
+    "regex_CreditCard": "XipcYihbMC05XVsuXSk/KChbMC05XXsxNn0pfCgoWzAtOV17NH0pWy1dKFswLTldezR9KVstXShbMC05XXs0fSlbLV0oWzAtOV17NH0pKSlcYg==",
+    "regex_IBAN": "XGJUUlswLTldezJ9XHM/KFswLTldezR9XHM/KXsxfShbMC05XXsxfSkoWzAtOV17M31ccz8pKFswLTldezR9XHM/KXszfShbMC05XXsyfSlccz9cYg==",
+    "regex_MobilePhoneTR": "XipccygoWys5XSpbMF0qKFxkezN9KS0qXHMqKFxkezN9KS0qXHMqKFxkezJ9KS0qXHMqKFxkezJ9KSl8KChcZHszfSktKlxzKihcZHszfSktKlxzKihcZHsyfSktKlxzKihcZHsyfSkpfChcKCpbMF0qKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKXwoWzBdKlwoKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKSlcYg==",
+    "regex_LandlinePhoneTR": "XipccygoWys5XSpbMF0qKFxkezN9KS0qXHMqKFxkezN9KS0qXHMqKFxkezJ9KS0qXHMqKFxkezJ9KSl8KChcZHszfSktKlxzKihcZHszfSktKlxzKihcZHsyfSktKlxzKihcZHsyfSkpfChcKCpbMF0qKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKXwoWzBdKlwoKFxkezN9KVwpLSpccyooXGR7M30pLSpccyooXGR7Mn0pLSpccyooXGR7Mn0pKSlcYg==",
+    "regex_TaxNumberTR": "XipcYihbMC05XVsuXSk/XGR7MTB9XGI=",
+    "mobilePhoneCodesTR": "501, 505, 506, 507, 551 , 552, 553, 554, 555, 559,530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 561,540, 541, 542, 543, 544, 545, 546, 547, 548, 549",
+    "landlinePhoneCodesTR": "322, 416, 272, 472, 382, 358, 312, 242, 478, 466, 256, 266, 378, 488, 458, 228, 426, 434, 374, 248, 224, 286, 376, 364, 258, 412, 380, 284, 424, 446, 442, 222, 342, 454, 456, 438, 326, 476, 246, 324, 212, 216, 232, 370, 338, 474, 366, 352, 318, 288, 386, 348, 344, 262, 332, 274, 422, 236, 482, 252, 436, 384, 388,452, 328, 464 , 264, 362, 484, 368,3 46, 414, 486, 282, 356, 462, 428, 276, 432, 226, 354, 372, 392",
+    "unSupportedFileFormats": ".psd,.vmx,.rep,.ico,.vmss,.dmp,.dll,.ascx,.suo,.svg,.rdp,.sln,.vb,.apk,.nvram,.drv,.pfx,.svg,.jar,.manifest,.cache,.jar,.css,.log,.ashx,.sql,.bin,.db,.asp,.temp,.ost,.ttf,.appinfo,.pst,.menudata,.cab,.user,.msi,.tf,.appicon\\t,.lnk,.asax,.lck,.tf1,.rep,.aspx,.sys,.tmp,.csproj,.yaml,.kfd,.exe,.bat,.com,.igpi,.drawio,.nvram,.vmxf,.nvram,.vmdk,.dat,.compiled,.wixpdb,.vmx~,.js,.py,.vencx,.crt,.vmem,..cgi,.lnk,.java,.bak,.scss,",
+    "functionalControlCreditCardTypes": "MasterCard, Visa, VisaElectron"
+  },
+  "Tenants": [
+    {
+      "Domain": "siberson.com",
+      "Id": "784917ad-7c83-4bce-8305-a70a98e65508",
+      "Name": null
+    }
+  ]
+}
